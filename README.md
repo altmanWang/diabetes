@@ -19,4 +19,10 @@ The first commit:
 
 offline:0.98649 online:0.8627
 
+#1.7
+## Preprocess Data
+- 1. long-tail log1p
+- 2. delete two valueless features
+- 3. add some new statistic features by trian[column] = train[column].apply(lambda x : x - train[column].max())
 
+offline:0.97944 online:0.8854 rank:38
